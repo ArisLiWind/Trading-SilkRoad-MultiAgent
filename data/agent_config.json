@@ -1,0 +1,13 @@
+{
+  "taizi": {"model": "claude-3-5-sonnet-20241022", "channel": "feishu"},
+  "zhongshu": {"model": "claude-3-5-sonnet-20241022", "channel": "feishu"},
+  "menxia": {"model": "claude-3-opus-20240229", "channel": "feishu"},
+  "shangshu": {"model": "claude-3-5-sonnet-20241022", "channel": "feishu"},
+  "hubu": {"model": "gpt-4o", "channel": "feishu"},
+  "libu": {"model": "gpt-4o", "channel": "feishu"},
+  "bingbu": {"model": "gpt-4o-mini", "channel": "feishu"},
+  "xingbu": {"model": "gpt-4o-mini", "channel": "feishu"},
+  "gongbu": {"model": "gpt-4o", "channel": "feishu"},
+  "libu_hr": {"model": "claude-3-5-haiku-20241022", "channel": "feishu"},
+  "zaochao": {"model": "claude-3-5-haiku-20241022", "channel": "feishu"}
+}

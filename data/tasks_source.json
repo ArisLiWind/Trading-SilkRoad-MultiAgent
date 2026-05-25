@@ -1,0 +1,437 @@
+[
+  {
+    "id": "JJC-20260525-001",
+    "title": "分析 TradingAgents 框架竞品对比报告",
+    "state": "Done",
+    "official": "hubu",
+    "org": "户部",
+    "priority": "high",
+    "createdAt": "2026-05-25T08:00:00Z",
+    "updatedAt": "2026-05-25T10:30:00Z",
+    "flow": [
+      {
+        "from": "Pending",
+        "to": "Taizi",
+        "by": "太子",
+        "note": "收到旨意，任务分拣完毕",
+        "time": "2026-05-25T08:01:00Z"
+      },
+      {
+        "from": "Taizi",
+        "to": "Zhongshu",
+        "by": "中书省",
+        "note": "规划子任务：调研、对比、撰写",
+        "time": "2026-05-25T08:10:00Z"
+      },
+      {
+        "from": "Zhongshu",
+        "to": "Menxia",
+        "by": "门下省",
+        "note": "方案审议通过，准奏",
+        "time": "2026-05-25T08:25:00Z"
+      },
+      {
+        "from": "Menxia",
+        "to": "Assigned",
+        "by": "尚书省",
+        "note": "派发至户部",
+        "time": "2026-05-25T08:30:00Z"
+      },
+      {
+        "from": "Assigned",
+        "to": "Doing",
+        "by": "户部",
+        "note": "开始执行竞品调研",
+        "time": "2026-05-25T08:35:00Z"
+      },
+      {
+        "from": "Doing",
+        "to": "Done",
+        "by": "户部",
+        "note": "报告已完成并提交",
+        "time": "2026-05-25T10:30:00Z"
+      }
+    ],
+    "todos": [
+      {
+        "id": 1,
+        "text": "调研 CrewAI 架构",
+        "status": "completed"
+      },
+      {
+        "id": 2,
+        "text": "调研 AutoGen 架构",
+        "status": "completed"
+      },
+      {
+        "id": 3,
+        "text": "对比分析表格",
+        "status": "completed"
+      },
+      {
+        "id": 4,
+        "text": "撰写最终报告",
+        "status": "completed"
+      }
+    ],
+    "progress": "竞品分析报告已完成，共对比 CrewAI、AutoGen、LangGraph 三大框架",
+    "heartbeat": null,
+    "archived": true,
+    "archivedAt": "2026-05-25T07:55:45.450173Z"
+  },
+  {
+    "id": "JJC-20260525-002",
+    "title": "设计丝绸之路 Multi-Agent 协作架构",
+    "state": "Doing",
+    "official": "gongbu",
+    "org": "工部",
+    "priority": "high",
+    "createdAt": "2026-05-25T09:00:00Z",
+    "updatedAt": "2026-05-25T15:20:00Z",
+    "flow": [
+      {
+        "from": "Pending",
+        "to": "Taizi",
+        "by": "太子",
+        "note": "收到旨意",
+        "time": "2026-05-25T09:01:00Z"
+      },
+      {
+        "from": "Taizi",
+        "to": "Zhongshu",
+        "by": "中书省",
+        "note": "规划架构设计方案",
+        "time": "2026-05-25T09:15:00Z"
+      },
+      {
+        "from": "Zhongshu",
+        "to": "Menxia",
+        "by": "门下省",
+        "note": "审议中，要求补充技术细节",
+        "time": "2026-05-25T09:40:00Z"
+      },
+      {
+        "from": "Menxia",
+        "to": "Zhongshu",
+        "by": "门下省",
+        "note": "⚠️ 封驳：方案需补充 Agent 通信协议",
+        "time": "2026-05-25T09:55:00Z"
+      },
+      {
+        "from": "Zhongshu",
+        "to": "Menxia",
+        "by": "中书省",
+        "note": "补充完毕，重新提交",
+        "time": "2026-05-25T10:20:00Z"
+      },
+      {
+        "from": "Menxia",
+        "to": "Assigned",
+        "by": "门下省",
+        "note": "准奏，方案完备",
+        "time": "2026-05-25T10:35:00Z"
+      },
+      {
+        "from": "Assigned",
+        "to": "Doing",
+        "by": "工部",
+        "note": "正在实现架构原型",
+        "time": "2026-05-25T10:40:00Z"
+      }
+    ],
+    "todos": [
+      {
+        "id": 1,
+        "text": "绘制 Agent 拓扑图",
+        "status": "completed"
+      },
+      {
+        "id": 2,
+        "text": "定义消息通信协议",
+        "status": "completed"
+      },
+      {
+        "id": 3,
+        "text": "实现 Agent 基础框架",
+        "status": "in-progress"
+      },
+      {
+        "id": 4,
+        "text": "编写单元测试",
+        "status": "pending"
+      },
+      {
+        "id": 5,
+        "text": "文档化 API 接口",
+        "status": "pending"
+      }
+    ],
+    "progress": "正在实现 Agent 基础框架，拓扑图与协议设计已完成",
+    "heartbeat": {
+      "status": "active",
+      "label": "🟢 活跃 2分钟前",
+      "ageSec": 120
+    },
+    "_scheduler": {
+      "enabled": true,
+      "stallThresholdSec": 600,
+      "maxRetry": 2,
+      "retryCount": 0,
+      "escalationLevel": 0,
+      "autoRollback": true,
+      "lastProgressAt": "2026-05-25T15:20:00Z",
+      "stallSince": null,
+      "lastDispatchStatus": "idle",
+      "snapshot": {
+        "state": "Doing",
+        "org": "工部",
+        "now": "",
+        "savedAt": "2026-05-25T07:52:07.017970Z",
+        "note": "init"
+      }
+    }
+  },
+  {
+    "id": "JJC-20260525-003",
+    "title": "量化策略回测模块开发",
+    "state": "Menxia",
+    "official": "bingbu",
+    "org": "兵部",
+    "priority": "medium",
+    "createdAt": "2026-05-25T11:00:00Z",
+    "updatedAt": "2026-05-25T14:00:00Z",
+    "flow": [
+      {
+        "from": "Pending",
+        "to": "Taizi",
+        "by": "太子",
+        "note": "收到旨意，回测任务",
+        "time": "2026-05-25T11:01:00Z"
+      },
+      {
+        "from": "Taizi",
+        "to": "Zhongshu",
+        "by": "中书省",
+        "note": "规划：数据获取、策略实现、回测引擎",
+        "time": "2026-05-25T11:20:00Z"
+      },
+      {
+        "from": "Zhongshu",
+        "to": "Menxia",
+        "by": "门下省",
+        "note": "提交门下省审议",
+        "time": "2026-05-25T11:45:00Z"
+      }
+    ],
+    "todos": [
+      {
+        "id": 1,
+        "text": "确定回测数据源",
+        "status": "pending"
+      },
+      {
+        "id": 2,
+        "text": "实现策略框架",
+        "status": "pending"
+      },
+      {
+        "id": 3,
+        "text": "开发回测引擎",
+        "status": "pending"
+      }
+    ],
+    "progress": "等待门下省审议方案",
+    "heartbeat": {
+      "status": "warn",
+      "label": "🟡 可能停滞 62分钟前",
+      "ageSec": 3720
+    },
+    "_scheduler": {
+      "enabled": true,
+      "stallThresholdSec": 600,
+      "maxRetry": 2,
+      "retryCount": 0,
+      "escalationLevel": 0,
+      "autoRollback": true,
+      "lastProgressAt": "2026-05-25T14:00:00Z",
+      "stallSince": null,
+      "lastDispatchStatus": "idle",
+      "snapshot": {
+        "state": "Menxia",
+        "org": "兵部",
+        "now": "",
+        "savedAt": "2026-05-25T07:52:07.018307Z",
+        "note": "init"
+      }
+    }
+  },
+  {
+    "id": "JJC-20260525-004",
+    "title": "实时行情数据接入与清洗",
+    "state": "Zhongshu",
+    "official": "zhongshu",
+    "org": "中书省",
+    "priority": "high",
+    "createdAt": "2026-05-25T13:00:00Z",
+    "updatedAt": "2026-05-25T15:10:00Z",
+    "flow": [
+      {
+        "from": "Pending",
+        "to": "Taizi",
+        "by": "太子",
+        "note": "旨意已接收",
+        "time": "2026-05-25T13:01:00Z"
+      },
+      {
+        "from": "Taizi",
+        "to": "Zhongshu",
+        "by": "中书省",
+        "note": "正在规划数据接入方案",
+        "time": "2026-05-25T13:15:00Z"
+      }
+    ],
+    "todos": [
+      {
+        "id": 1,
+        "text": "选择数据源供应商",
+        "status": "in-progress"
+      },
+      {
+        "id": 2,
+        "text": "设计数据清洗流水线",
+        "status": "pending"
+      }
+    ],
+    "progress": "中书省正在拟定行情数据接入规划",
+    "heartbeat": {
+      "status": "active",
+      "label": "🟢 活跃 8分钟前",
+      "ageSec": 480
+    },
+    "_scheduler": {
+      "enabled": true,
+      "stallThresholdSec": 600,
+      "maxRetry": 2,
+      "retryCount": 0,
+      "escalationLevel": 0,
+      "autoRollback": true,
+      "lastProgressAt": "2026-05-25T15:10:00Z",
+      "stallSince": null,
+      "lastDispatchStatus": "idle",
+      "snapshot": {
+        "state": "Zhongshu",
+        "org": "中书省",
+        "now": "",
+        "savedAt": "2026-05-25T07:52:07.018323Z",
+        "note": "init"
+      }
+    }
+  },
+  {
+    "id": "JJC-20260525-005",
+    "title": "风险控制模块 - 仓位管理策略",
+    "state": "Pending",
+    "official": null,
+    "org": null,
+    "priority": "medium",
+    "createdAt": "2026-05-25T15:25:00Z",
+    "updatedAt": "2026-05-25T15:25:00Z",
+    "flow": [],
+    "todos": [],
+    "progress": "",
+    "heartbeat": null,
+    "_scheduler": {
+      "enabled": true,
+      "stallThresholdSec": 600,
+      "maxRetry": 2,
+      "retryCount": 0,
+      "escalationLevel": 0,
+      "autoRollback": true,
+      "lastProgressAt": "2026-05-25T15:25:00Z",
+      "stallSince": null,
+      "lastDispatchStatus": "idle",
+      "snapshot": {
+        "state": "Pending",
+        "org": null,
+        "now": "",
+        "savedAt": "2026-05-25T07:52:07.018339Z",
+        "note": "init"
+      }
+    }
+  },
+  {
+    "id": "JJC-20260525-006",
+    "title": "交易所 API 对接 - OKX / Binance",
+    "state": "Done",
+    "official": "gongbu",
+    "org": "工部",
+    "priority": "high",
+    "createdAt": "2026-05-24T09:00:00Z",
+    "updatedAt": "2026-05-25T09:00:00Z",
+    "flow": [
+      {
+        "from": "Pending",
+        "to": "Taizi",
+        "by": "太子",
+        "note": "接收旨意",
+        "time": "2026-05-24T09:01:00Z"
+      },
+      {
+        "from": "Taizi",
+        "to": "Zhongshu",
+        "by": "中书省",
+        "note": "规划 API 对接方案",
+        "time": "2026-05-24T09:30:00Z"
+      },
+      {
+        "from": "Zhongshu",
+        "to": "Menxia",
+        "by": "门下省",
+        "note": "审议通过",
+        "time": "2026-05-24T10:00:00Z"
+      },
+      {
+        "from": "Menxia",
+        "to": "Assigned",
+        "by": "尚书省",
+        "note": "派发工部",
+        "time": "2026-05-24T10:15:00Z"
+      },
+      {
+        "from": "Assigned",
+        "to": "Doing",
+        "by": "工部",
+        "note": "开始对接",
+        "time": "2026-05-24T10:20:00Z"
+      },
+      {
+        "from": "Doing",
+        "to": "Done",
+        "by": "工部",
+        "note": "OKX 和 Binance API 均已对接完成",
+        "time": "2026-05-25T09:00:00Z"
+      }
+    ],
+    "todos": [
+      {
+        "id": 1,
+        "text": "OKX API 对接",
+        "status": "completed"
+      },
+      {
+        "id": 2,
+        "text": "Binance API 对接",
+        "status": "completed"
+      },
+      {
+        "id": 3,
+        "text": "统一接口封装",
+        "status": "completed"
+      }
+    ],
+    "progress": "双交易所 API 对接完成，统一接口已封装",
+    "heartbeat": null,
+    "archived": true,
+    "archivedAt": "2026-05-25T07:55:45.450212Z"
+  }
+]
