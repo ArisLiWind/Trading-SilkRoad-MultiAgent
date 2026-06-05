@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-25 16:04:07",
+  "generatedAt": "2026-05-31 00:35:34",
   "taskSource": "tasks_source.json",
   "officials": [
     {
@@ -184,7 +184,7 @@
       "org": "工部",
       "priority": "high",
       "createdAt": "2026-05-25T09:00:00Z",
-      "updatedAt": "2026-05-25T15:20:00Z",
+      "updatedAt": "2026-05-25T18:36:33.769278Z",
       "flow": [
         {
           "from": "Pending",
@@ -265,28 +265,84 @@
       ],
       "progress": "正在实现 Agent 基础框架，拓扑图与协议设计已完成",
       "heartbeat": {
-        "status": "active",
-        "label": "🟢 活跃 -436分钟前",
-        "ageSec": -26152
+        "status": "stalled",
+        "label": "🔴 已停滞 7079分钟",
+        "ageSec": 424740
       },
       "_scheduler": {
         "enabled": true,
         "stallThresholdSec": 600,
         "maxRetry": 2,
-        "retryCount": 0,
-        "escalationLevel": 0,
+        "retryCount": 2,
+        "escalationLevel": 2,
         "autoRollback": true,
         "lastProgressAt": "2026-05-25T15:20:00Z",
-        "stallSince": null,
-        "lastDispatchStatus": "idle",
+        "stallSince": "2026-05-25T16:21:23.857597Z",
+        "lastDispatchStatus": "failed",
         "snapshot": {
           "state": "Doing",
           "org": "工部",
           "now": "",
           "savedAt": "2026-05-25T07:52:07.017970Z",
           "note": "init"
-        }
+        },
+        "lastRetryAt": "2026-05-25T18:36:23.966010Z",
+        "lastDispatchTrigger": "taizi-scan-retry",
+        "lastDispatchAt": "2026-05-25T18:36:33.769204Z",
+        "lastDispatchAgent": "gongbu",
+        "lastDispatchError": "Gateway agent failed; falling back to embedded: Error: Unknown agent id \"gongbu\". Use \"openclaw agents list\" to see configured agents.\nError: Unknown agent id \"gongbu\". Use \"openclaw agents list\" to s",
+        "lastEscalatedAt": "2026-05-25T23:28:08.958820Z"
       },
+      "flow_log": [
+        {
+          "at": "2026-05-25T16:21:23.857939Z",
+          "from": "太子调度",
+          "to": "工部",
+          "remark": "🧭 停滞3683秒，触发自动重试第1次"
+        },
+        {
+          "at": "2026-05-25T16:21:23.865624Z",
+          "from": "太子调度",
+          "to": "执行中",
+          "remark": "🧭 已入队派发：Doing → gongbu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T17:21:49.218957Z",
+          "from": "太子调度",
+          "to": "工部",
+          "remark": "🧭 派发失败：gongbu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T18:36:23.966104Z",
+          "from": "太子调度",
+          "to": "工部",
+          "remark": "🧭 停滞11783秒，触发自动重试第2次"
+        },
+        {
+          "at": "2026-05-25T18:36:23.975178Z",
+          "from": "太子调度",
+          "to": "执行中",
+          "remark": "🧭 已入队派发：Doing → gongbu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T18:36:33.769256Z",
+          "from": "太子调度",
+          "to": "工部",
+          "remark": "🧭 派发失败：gongbu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T21:25:43.031557Z",
+          "from": "太子调度",
+          "to": "门下省",
+          "remark": "🧭 停滞21943秒，升级至门下省协调"
+        },
+        {
+          "at": "2026-05-25T23:28:08.958888Z",
+          "from": "太子调度",
+          "to": "尚书省",
+          "remark": "🧭 停滞29288秒，升级至尚书省协调"
+        }
+      ],
       "outputMeta": {
         "exists": true,
         "lastModified": "2026-05-25 15:49:37"
@@ -300,7 +356,7 @@
       "org": "兵部",
       "priority": "medium",
       "createdAt": "2026-05-25T11:00:00Z",
-      "updatedAt": "2026-05-25T14:00:00Z",
+      "updatedAt": "2026-05-25T17:21:49.214897Z",
       "flow": [
         {
           "from": "Pending",
@@ -347,20 +403,76 @@
         "enabled": true,
         "stallThresholdSec": 600,
         "maxRetry": 2,
-        "retryCount": 0,
-        "escalationLevel": 0,
+        "retryCount": 2,
+        "escalationLevel": 2,
         "autoRollback": true,
         "lastProgressAt": "2026-05-25T14:00:00Z",
-        "stallSince": null,
-        "lastDispatchStatus": "idle",
+        "stallSince": "2026-05-25T14:18:56.047677Z",
+        "lastDispatchStatus": "failed",
         "snapshot": {
           "state": "Menxia",
           "org": "兵部",
           "now": "",
           "savedAt": "2026-05-25T07:52:07.018307Z",
           "note": "init"
-        }
+        },
+        "lastRetryAt": "2026-05-25T16:21:23.857967Z",
+        "lastDispatchTrigger": "taizi-scan-retry",
+        "lastDispatchAt": "2026-05-25T17:21:49.214763Z",
+        "lastDispatchAgent": "menxia",
+        "lastDispatchError": "Gateway agent failed; falling back to embedded: Error: Unknown agent id \"menxia\". Use \"openclaw agents list\" to see configured agents.\nError: Unknown agent id \"menxia\". Use \"openclaw agents list\" to s",
+        "lastEscalatedAt": "2026-05-25T21:25:43.031629Z"
       },
+      "flow_log": [
+        {
+          "at": "2026-05-25T14:18:56.048539Z",
+          "from": "太子调度",
+          "to": "兵部",
+          "remark": "🧭 停滞1136秒，触发自动重试第1次"
+        },
+        {
+          "at": "2026-05-25T14:18:56.059499Z",
+          "from": "太子调度",
+          "to": "门下省",
+          "remark": "🧭 已入队派发：Menxia → menxia（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T14:19:13.207652Z",
+          "from": "太子调度",
+          "to": "兵部",
+          "remark": "🧭 派发失败：menxia（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T16:21:23.857974Z",
+          "from": "太子调度",
+          "to": "兵部",
+          "remark": "🧭 停滞8483秒，触发自动重试第2次"
+        },
+        {
+          "at": "2026-05-25T16:21:23.872828Z",
+          "from": "太子调度",
+          "to": "门下省",
+          "remark": "🧭 已入队派发：Menxia → menxia（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T17:21:49.214880Z",
+          "from": "太子调度",
+          "to": "兵部",
+          "remark": "🧭 派发失败：menxia（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T18:36:23.966216Z",
+          "from": "太子调度",
+          "to": "门下省",
+          "remark": "🧭 停滞16583秒，升级至门下省协调"
+        },
+        {
+          "at": "2026-05-25T21:25:43.031647Z",
+          "from": "太子调度",
+          "to": "尚书省",
+          "remark": "🧭 停滞26743秒，升级至尚书省协调"
+        }
+      ],
       "outputMeta": {
         "exists": true,
         "lastModified": "2026-05-25 15:49:37"
@@ -370,11 +482,11 @@
       "id": "JJC-20260525-004",
       "title": "实时行情数据接入与清洗",
       "state": "Zhongshu",
-      "official": "zhongshu",
+      "official": "户部",
       "org": "中书省",
       "priority": "high",
       "createdAt": "2026-05-25T13:00:00Z",
-      "updatedAt": "2026-05-25T15:10:00Z",
+      "updatedAt": "2026-05-26T05:34:15.047724Z",
       "flow": [
         {
           "from": "Pending",
@@ -403,26 +515,133 @@
           "status": "pending"
         }
       ],
-      "progress": "中书省正在拟定行情数据接入规划",
+      "progress": "[2026-05-25T17:08:36] 市场情绪: 中性 (-0.70%)\n比特币 77,455.08 (+0.76%) 🟩 偏多 | 以太坊 2,117.33 (-0.16%) ⬜ 中性 | Solana 86.03 (-0.58%) 🟥 偏空 | BNB 662.31 (+0.55%) 🟩 偏多 | 苹果 308.82 (+0.92%) 🟩 偏多 | 英伟达 215.33 (-2.18%) 🟥 偏空",
       "heartbeat": null,
       "_scheduler": {
         "enabled": true,
         "stallThresholdSec": 600,
         "maxRetry": 2,
-        "retryCount": 0,
-        "escalationLevel": 0,
+        "retryCount": 2,
+        "escalationLevel": 2,
         "autoRollback": true,
-        "lastProgressAt": "2026-05-25T15:10:00Z",
-        "stallSince": null,
-        "lastDispatchStatus": "idle",
+        "lastProgressAt": "2026-05-26T00:28:47.951345Z",
+        "stallSince": "2026-05-26T02:49:37.893733Z",
+        "lastDispatchStatus": "gateway-offline",
         "snapshot": {
           "state": "Zhongshu",
           "org": "中书省",
           "now": "",
           "savedAt": "2026-05-25T07:52:07.018323Z",
           "note": "init"
-        }
+        },
+        "lastRetryAt": "2026-05-26T05:33:59.765622Z",
+        "lastDispatchTrigger": "taizi-scan-retry",
+        "lastDispatchAt": "2026-05-26T05:34:15.047531Z",
+        "lastDispatchAgent": "zhongshu",
+        "lastDispatchError": "Gateway agent failed; falling back to embedded: Error: Unknown agent id \"hubu\". Use \"openclaw agents list\" to see configured agents.\nError: Unknown agent id \"hubu\". Use \"openclaw agents list\" to see c",
+        "lastEscalatedAt": "2026-05-26T07:13:41.663077Z",
+        "rollbackCount": 1
       },
+      "flow_log": [
+        {
+          "at": "2026-05-25T16:21:23.857999Z",
+          "from": "太子调度",
+          "to": "户部",
+          "remark": "🧭 停滞4283秒，触发自动重试第1次"
+        },
+        {
+          "at": "2026-05-25T16:21:23.894225Z",
+          "from": "太子调度",
+          "to": "执行中",
+          "remark": "🧭 已入队派发：Doing → hubu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T17:21:49.224711Z",
+          "from": "太子调度",
+          "to": "户部",
+          "remark": "🧭 派发失败：hubu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T18:36:23.966250Z",
+          "from": "太子调度",
+          "to": "户部",
+          "remark": "🧭 停滞12383秒，触发自动重试第2次"
+        },
+        {
+          "at": "2026-05-25T18:36:23.984733Z",
+          "from": "太子调度",
+          "to": "执行中",
+          "remark": "🧭 已入队派发：Doing → hubu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T18:36:33.775701Z",
+          "from": "太子调度",
+          "to": "户部",
+          "remark": "🧭 派发失败：hubu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T21:25:43.031697Z",
+          "from": "太子调度",
+          "to": "门下省",
+          "remark": "🧭 停滞22543秒，升级至门下省协调"
+        },
+        {
+          "at": "2026-05-25T23:28:08.958953Z",
+          "from": "太子调度",
+          "to": "尚书省",
+          "remark": "🧭 停滞29888秒，升级至尚书省协调"
+        },
+        {
+          "at": "2026-05-26T00:28:47.951416Z",
+          "from": "太子调度",
+          "to": "中书省",
+          "remark": "🧭 连续停滞，自动回滚：Doing → Zhongshu（第1次）"
+        },
+        {
+          "at": "2026-05-26T00:28:47.962613Z",
+          "from": "太子调度",
+          "to": "中书省",
+          "remark": "🧭 已入队派发：Zhongshu → zhongshu（taizi-auto-rollback）"
+        },
+        {
+          "at": "2026-05-26T02:49:37.893804Z",
+          "from": "太子调度",
+          "to": "中书省",
+          "remark": "🧭 停滞8449秒，触发自动重试第1次"
+        },
+        {
+          "at": "2026-05-26T02:49:37.904119Z",
+          "from": "太子调度",
+          "to": "中书省",
+          "remark": "🧭 已入队派发：Zhongshu → zhongshu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-26T05:33:59.765714Z",
+          "from": "太子调度",
+          "to": "中书省",
+          "remark": "🧭 停滞18311秒，触发自动重试第2次"
+        },
+        {
+          "at": "2026-05-26T05:33:59.778452Z",
+          "from": "太子调度",
+          "to": "中书省",
+          "remark": "🧭 已入队派发：Zhongshu → zhongshu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-26T07:11:41.621639Z",
+          "from": "太子调度",
+          "to": "门下省",
+          "remark": "🧭 停滞24173秒，升级至门下省协调"
+        },
+        {
+          "at": "2026-05-26T07:13:41.663219Z",
+          "from": "太子调度",
+          "to": "尚书省",
+          "remark": "🧭 停滞24293秒，升级至尚书省协调"
+        }
+      ],
+      "now": "↩️ 太子调度自动回滚到稳定节点",
+      "block": "无",
       "outputMeta": {
         "exists": true,
         "lastModified": "2026-05-25 15:49:37"
@@ -436,7 +655,7 @@
       "org": "",
       "priority": "medium",
       "createdAt": "2026-05-25T15:25:00Z",
-      "updatedAt": "2026-05-25T15:25:00Z",
+      "updatedAt": "2026-05-25T18:36:33.773168Z",
       "flow": [],
       "todos": [],
       "progress": "",
@@ -445,20 +664,70 @@
         "enabled": true,
         "stallThresholdSec": 600,
         "maxRetry": 2,
-        "retryCount": 0,
-        "escalationLevel": 0,
+        "retryCount": 2,
+        "escalationLevel": 2,
         "autoRollback": true,
         "lastProgressAt": "2026-05-25T15:25:00Z",
-        "stallSince": null,
-        "lastDispatchStatus": "idle",
+        "stallSince": "2026-05-25T16:21:23.858013Z",
+        "lastDispatchStatus": "failed",
         "snapshot": {
           "state": "Pending",
           "org": null,
           "now": "",
           "savedAt": "2026-05-25T07:52:07.018339Z",
           "note": "init"
-        }
+        },
+        "lastRetryAt": "2026-05-25T18:36:23.966269Z",
+        "lastDispatchTrigger": "taizi-scan-retry",
+        "lastDispatchAt": "2026-05-25T18:36:33.773120Z",
+        "lastDispatchAgent": "zhongshu",
+        "lastDispatchError": "Gateway agent failed; falling back to embedded: Error: Unknown agent id \"zhongshu\". Use \"openclaw agents list\" to see configured agents.\nError: Unknown agent id \"zhongshu\". Use \"openclaw agents list\" ",
+        "lastEscalatedAt": "2026-05-25T23:28:08.958970Z"
       },
+      "flow_log": [
+        {
+          "at": "2026-05-25T16:21:23.858023Z",
+          "from": "太子调度",
+          "to": null,
+          "remark": "🧭 停滞3383秒，触发自动重试第1次"
+        },
+        {
+          "at": "2026-05-25T16:21:23.899456Z",
+          "from": "太子调度",
+          "to": "待处理",
+          "remark": "🧭 已入队派发：Pending → zhongshu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T18:36:23.966277Z",
+          "from": "太子调度",
+          "to": null,
+          "remark": "🧭 停滞11483秒，触发自动重试第2次"
+        },
+        {
+          "at": "2026-05-25T18:36:23.995699Z",
+          "from": "太子调度",
+          "to": "待处理",
+          "remark": "🧭 已入队派发：Pending → zhongshu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T18:36:33.773162Z",
+          "from": "太子调度",
+          "to": null,
+          "remark": "🧭 派发失败：zhongshu（taizi-scan-retry）"
+        },
+        {
+          "at": "2026-05-25T21:25:43.031740Z",
+          "from": "太子调度",
+          "to": "门下省",
+          "remark": "🧭 停滞21643秒，升级至门下省协调"
+        },
+        {
+          "at": "2026-05-25T23:28:08.958975Z",
+          "from": "太子调度",
+          "to": "尚书省",
+          "remark": "🧭 停滞28988秒，升级至尚书省协调"
+        }
+      ],
       "outputMeta": {
         "exists": true,
         "lastModified": "2026-05-25 15:49:37"
@@ -562,7 +831,7 @@
   ],
   "metrics": {
     "officialCount": 11,
-    "todayDone": 2,
+    "todayDone": 0,
     "totalDone": 2,
     "inProgress": 1,
     "blocked": 0
